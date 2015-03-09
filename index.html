@@ -1,0 +1,256 @@
+---
+layout: default
+---
+
+<div class="container bs-docs-container">
+
+<div class="row">
+    <div class="col-md-3" role="complementary">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+            <ul class="nav bs-docs-sidenav">
+                <li><a href="/">Trang chu</a></li>
+                <li><a href="./cat.html">Bac si 1</a></li>
+                <li><a href="./cat.html">Bac si 2</a></li>
+                <li><a href="./cat.html">Bac si 3</a></li>
+                <li><a href="./cat.html">Bac si 4</a></li>
+                <li><a href="./cat.html">Bac si 5</a></li>
+                <li><a href="./contact.html">Lien he</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    <div class="col-md-9" role="main">
+    <div class="bs-docs-section">
+        <h1 id="download" class="page-header">Tại sao chúng tôi ở đây?</h1>
+
+        <p class="lead">
+            Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu vehicula metus quam
+            <br>
+            ac tellus aenean cursus massa in nulla suscipit lacinia in at eros
+        </p>
+        <div class="row">
+            <div class="col-md-6 col-sm-5 col-xs-12">
+                <img src="https://www.brainstormforce.com/demos/imedica/wp-content/uploads/2014/11/Untitled-71.png"
+                     class="img-responsive" alt="Untitled-7">
+            </div>
+            <div class="col-md-6 col-sm-7 col-xs-12">
+                <div class="desc-1">
+                    Aenean cursus fermentum euismod. Cras sodales nibh sed egestas adipiscing. Vestibulum sit amet
+                    eros sapien. Vestibulum quis dapibus sem. Fusce a lacinia nisl. Mauris sagittis egestas justo.
+                    Praesent tempus quis nibh nec imperdiet.
+                </div>
+                <div class="desc-2">
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="feature-list">
+                            <li>
+                                <span>Aenean cursus 1</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="feature-list">
+                            <li>
+
+                                <span>Aenean cursus 1</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                            <li>
+
+                                <span>Aenean cursus 2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+        <div class="bs-docs-section" id="s-teams">
+            <h1 class="page-header" >Chia sẻ cùng chúng tôi!</h1>
+
+            <p class="lead">
+                Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu vehicula metus quam
+                ac tellus aenean cursus massa in nulla suscipit lacinia in at eros
+            </p>
+            <div class="row">
+                <div class="team-carousel" id="team-carousel">
+                    {% assign array = "1|2|3|0|0" | split: "|" %}
+                    {% for item in array %}
+                    <div class="carousel-item">
+                        <a href="./cat.html" title="">
+                            <div class="team-member-wrap">
+                                <div class="team-member-image team_img_hover"><img
+                                        src="https://www.brainstormforce.com/demos/imedica/wp-content/uploads/2014/12/team_6.png"
+                                        alt="" style=""><span class="team-member-image-overlay"></span>
+                                </div>
+                                <div class="team-member-bio-wrap">
+                                    <div class="team-member-name-wrap">
+                                        <div class="team-member-name">John Morgan</div>
+                                        <div class="team-member-role">Chuyen khoa ngoai</div>
+                                    </div>
+                                    <div class="team-member-description">
+                                        <p>Lorem ipsum dolor sit amet, teft consecte tur adipiscing elit</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+                <script type="text/javascript">
+                    jQuery(document)
+                            .ready(function ($) {
+                                $('#team-carousel')
+                                        .slick({
+                                            dots: false,
+                                            autoplaySpeed: 5000,
+                                            speed: 300,
+                                            infinite: false,
+                                            arrows: true,
+                                            nextArrow: '<button type="button" class="slick-btn slick-next"><i class="fa fa-angle-right"></i></button>',
+                                            prevArrow: '<button type="button" class="slick-btn slick-prev"><i class="fa fa-angle-left"></i></button>',
+                                            slidesToScroll: 1,
+                                            slidesToShow: 4,
+                                            swipe: true,
+                                            draggable: true,
+                                            touchMove: true,
+                                            responsive: [
+                                                {
+                                                    breakpoint: 992,
+                                                    settings: {
+                                                        slidesToShow: 3,
+                                                        slidesToScroll: 3
+                                                    }
+                                                },
+                                                {
+                                                    breakpoint: 768,
+                                                    settings: {
+                                                        slidesToShow: 2,
+                                                        slidesToScroll: 2
+                                                    }
+                                                },
+                                                {
+                                                    breakpoint: 480,
+                                                    settings: {
+                                                        slidesToShow: 1,
+                                                        slidesToScroll: 1
+                                                    }
+                                                }
+                                            ],
+                                            pauseOnHover: true,
+                                            pauseOnDotsHover: true,
+                                            customPaging: function (slider, i) {
+                                                return '<i type="button" style="color:#333333;" class="ultsl-record" data-role="none"></i>';
+                                            }
+                                        });
+                            });
+
+                </script>
+                <!-- //carousel slick -->
+            </div>
+        </div>
+
+        <div class="bs-docs-section">
+            <h1 class="page-header">Thảo luận mới</h1>
+
+            <p class="lead">
+                Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu vehicula metus quam
+                ac tellus aenean cursus massa in nulla suscipit lacinia in at eros
+            </p>
+            <div class="row news-feed">
+                <div class="col-md-6">
+                    {% assign array = "1|2" | split: "|" %}
+                    {% for item in array %}
+                    <div class="news-article article-lg">
+                        <h3 class="news-title"><a href="./detail.html">Tai sao con trai khac con gai?</a></h3>
+
+                        <div class="news-content-wrap">
+                            <div class="news-author-avatar">
+                                <img src="https://www.brainstormforce.com/demos/imedica/wp-content/uploads/2014/12/team_6.png"
+                                     alt="">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-content-info">
+                                    <span><i class="fa fa-calendar"></i>20/02/2015</span>
+                                    <span><i class="fa fa-eye"></i>420</span>
+                                    <span><i class="fa fa-comments"></i>5</span>
+                                </div>
+                                <p>Morbi condimentum, nunc non ornare dignissim, tellus eros molestie turpis, eu
+                                    vehicula metus quam
+                                    ac tellus aenean cursus massa in nulla suscipit lacinia in at eros
+                                </p>
+
+                                <div class="news-content-tag">
+                                    <span><i class="fa fa-tags"></i><a href="#">taga</a>, <a href="#">tagb</a></span>
+                                    <span><i class="fa fa-user"></i><a href="#">Mr Jonh</a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <div class="col-md-6">
+                    {% assign array = "1|2|3|0|0|0|0" | split: "|" %}
+                    {% for item in array %}
+                    <div class="news-article">
+                        <h3 class="news-title"><i class="fa fa-caret-right"></i>&nbsp; <a href="./detail.html">Tai sao mat troi moc
+                            huong dong?</a></h3>
+
+                        <div class="news-content">
+
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div>
+                        <a href="#" class="btn-more">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row videos-feed">
+                {% assign array = "1|2|0|0" | split: "|" %}
+                {% for item in array %}
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="videos-article">
+                        <a href="./detail.html">
+                            <img class="video-thumb"
+                                 src="//www.brainstormforce.com/demos/imedica/wp-content/uploads/2014/12/team_6.png"
+                                 alt="">
+                            <div class="video-title">Aenean cursus 2togd shdbf asfg iitnf</div>
+                            <span class="video-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+</div>
+</div>
+</div>
